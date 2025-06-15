@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import Header from "../../components/Header";
 import { NextIntlClientProvider } from "next-intl";
+import { ThemeProvider } from "@/providers/theme-provider";
+import WelcomeSection from "@/components/WelcomeSection";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const firacode = Fira_Code({
+  variable: "--font-fira-code",
   subsets: ["latin"],
 });
 
@@ -29,15 +26,17 @@ export default async function RootLayout({
   const { locale } = await params;
 
   return (
-    <html lang={locale}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <NextIntlClientProvider>
-          <Header />
+    <html lang={locale} suppressHydrationWarning>
+      <body className={`${firacode.variable} antialiased bg-background`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <NextIntlClientProvider>
+            <Header />
 
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
-        </NextIntlClientProvider>
+            <WelcomeSection />
+
+            {children}
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

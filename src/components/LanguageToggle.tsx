@@ -10,14 +10,17 @@ import {
 } from "./ui/dropdown-menu";
 import { Link, usePathname } from "@/i18n/navigation";
 import { MdGTranslate } from "react-icons/md";
+import { Button } from "./ui/button";
 
 export default function LanguageToggle() {
   const pathname = usePathname();
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
-        <MdGTranslate />
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" size="icon">
+          <MdGTranslate />
+        </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <Link href={pathname} locale="pt">
