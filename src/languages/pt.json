@@ -1,0 +1,20 @@
+{
+  "Home": {
+    "greeting": "Olá, Mundo!"
+  },
+  "Header": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "courses": "Cursos",
+    "contact": "Contato"
+  },
+  "LanguageSelector": {
+    "selectLanguage": "Select Language",
+    "languages": {
+      "en": "Inglês",
+      "pt": "Português",
+      "es": "Espanhol"
+    }
+  }
+}
