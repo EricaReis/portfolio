@@ -16,5 +16,15 @@
       "pt": "Portuguese",
       "es": "Spanish"
     }
+  },
+  "About": {
+    "greeting": "Hello, World!, I’m",
+    "name": "Érica Beatriz dos Reis",
+    "jobTitle": "Full Stack Developer",
+    "about": "Passionate about creating solutions.",
+    "experience": "4 years of experience in software development with: ",
+    "education": "Bachelor’s degree in Systems Analysis and Development from FATEC and currently pursuing a postgraduate degree in Digital Law and Data Protection.",
+    "alwaysImprove": "The focus is on updating, learning, and improving to meet market demands and provide the best experience for users.",
+    "and": "and"
   }
 }

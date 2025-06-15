@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         backgroundSecondary: "var(--background-secondary)",
+        primaryAlternative: "var(--primary-alternative)",
         foreground: "var(--foreground)",
         card: "var(--card)",
         'card-foreground': "var(--card-foreground)",

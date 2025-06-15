@@ -16,5 +16,15 @@
       "pt": "Português",
       "es": "Espanhol"
     }
+  },
+  "About": {
+    "greeting": "Hello, World!, eu sou",
+    "name": "Érica Beatriz dos Reis",
+    "jobTitle": "Desenvolvedora Fullstack",
+    "about": "Apaixonada por criar soluções.",
+    "experience": "4 anos de experiência com desenvolvimento: ",
+    "education": "Graduada em Análise e Desenvolvimento de Sistemas pela FATEC e cursando pós-graduação em Direito Digital e Proteção de Dados.",
+    "alwaysImprove": "O foco é atualização, aprendizado e aperfeiçoamento para atender às demandas do mercado e proporcionar as melhores experiências aos usuários.",
+    "and": "e"
   }
 }

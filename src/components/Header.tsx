@@ -19,7 +19,7 @@ export default function Header() {
           />
           <h1 className="text-2xl font-bold">Érica Reis</h1>
         </div>
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6 items-center">
           <a href="#about" className="hover:text-primary transition-colors">
             {t("about")}
           </a>

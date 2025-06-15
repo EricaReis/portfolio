@@ -1,11 +1,14 @@
-import { useTranslations } from "next-intl";
+import WelcomeSection from "@/components/WelcomeSection";
 
 export default function Home() {
-  const t = useTranslations("Home");
-
   return (
     <div>
-      <h1>{t("greeting")}</h1>
+      <WelcomeSection />
+
+      <section id="skills">Skills</section>
+      <section id="projects">Projects</section>
+      <section id="Courses">Courses</section>
+      <section id="Contact">Contact</section>
     </div>
   );
 }

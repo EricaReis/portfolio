@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "../../components/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "@/providers/theme-provider";
-import WelcomeSection from "@/components/WelcomeSection";
 
 const firacode = Fira_Code({
   variable: "--font-fira-code",
@@ -32,9 +31,9 @@ export default async function RootLayout({
           <NextIntlClientProvider>
             <Header />
 
-            <WelcomeSection />
-
-            {children}
+            <main className="flex flex-1 min-h-[calc(100vh-64px)] justify-center">
+              <div className="w-full max-w-7xl mx-auto px-4">{children}</div>
+            </main>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
