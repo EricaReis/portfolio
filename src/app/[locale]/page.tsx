@@ -1,14 +1,16 @@
+import CoursesSection from "@/components/CoursesSection";
 import WelcomeSection from "@/components/WelcomeSection";
+
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col p-12 gap-44">
       <WelcomeSection />
 
-      <section id="skills">Skills</section>
-      <section id="projects">Projects</section>
-      <section id="Courses">Courses</section>
-      <section id="Contact">Contact</section>
+      <Separator />
+
+      <CoursesSection />
     </div>
   );
 }
